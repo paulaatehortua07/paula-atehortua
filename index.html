@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Atehortua | Psicóloga Clínica</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons para los iconos modernos -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        arena: {
+                            50: '#fbf9f4',
+                            300: '#e2d4be',
+                            500: '#c5a880',
+                            600: '#b39265',
+                        },
+                        sereno: {
+                            100: '#f0f4f8',
+                            700: '#334e68',
+                            800: '#243b53',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Geist', 'Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-arena-50 text-slate-700 selection:bg-arena-300 antialiased">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-lg font-600 tracking-wide text-sereno-800">Paula Atehortua <span class="text-arena-500">.</span></span>
+            <div class="flex items-center gap-6 text-sm font-500 text-slate-500">
+                <a href="#sobre-mi" class="hover:text-arena-600 transition-colors">Sobre mí</a>
+                <a href="#enfoque" class="hover:text-arena-600 transition-colors">Enfoque</a>
+                <a href="#formacion" class="hover:text-arena-600 transition-colors">Formación</a>
+                <a href="https://wa.me/tu-numero-aqui" target="_blank" class="bg-sereno-700 text-white px-4 py-2 rounded-full text-xs font-600 hover:bg-sereno-800 transition-all shadow-sm">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN PRINCIPAL / HERO -->
+    <header class="max-w-5xl mx-auto px-6 pt-16 pb-20 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <!-- Texto Principal -->
+        <div class="md:col-span-7 space-y-6">
+            <span class="text-xs font-600 uppercase tracking-widest text-arena-600 bg-arena-300/20 px-3 py-1 rounded-full">Psicología Clínica y Salud Mental</span>
+            <h1 class="text-4xl sm:text-5xl font-700 text-sereno-800 leading-tight">
+                Un espacio seguro para entender tu mente y recuperar tu bienestar.
+            </h1>
+            <p class="text-lg text-slate-500 leading-relaxed max-w-xl">
+                Acompañamiento psicoterapéutico individual con base científica, enfocado en ayudarte a construir una vida con sentido, manejando el sufrimiento de forma compasiva y efectiva.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="https://wa.me/tu-numero-aqui" target="_blank" class="flex items-center gap-2 bg-arena-500 text-white px-6 py-3 rounded-xl font-600 hover:bg-arena-600 transition-all shadow-md shadow-arena-500/10">
+                    <i data-lucide="calendar" class="w-5 h-5"></i>
+                    Agendar una sesión
+                </a>
+                <a href="#enfoque" class="flex items-center gap-2 bg-white border border-slate-200 text-slate-600 px-6 py-3 rounded-xl font-600 hover:bg-slate-50 transition-all">
+                    Conocer mi enfoque
+                </a>
+            </div>
+        </div>
+
+        <!-- Foto Profesional -->
+        <div class="md:col-span-5 flex justify-center">
+            <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                <img src="paula.jpg" alt="Paula Atehortua - Psicóloga Clínica" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="sobre-mi" class="bg-white border-y border-slate-100 py-20">
+        <div class="max-w-3xl mx-auto px-6 text-center space-y-6">
+            <h2 class="text-3xl font-700 text-sereno-800">Hola, soy Paula Atehortua</h2>
+            <div class="w-12 h-1 bg-arena-500 mx-auto rounded-full"></div>
+            <p class="text-lg text-slate-600 leading-relaxed text-justify sm:text-center">
+                Entiendo la terapia como un proceso de colaboración activa. Mi objetivo no es decirte qué hacer con tu vida, sino brindarte las herramientas psicológicas necesarias para que puedas tomar decisiones libres, conscientes y alineadas con lo que realmente te importa. Trabajo desde la empatía, el respeto absoluto y la rigurosidad clínica.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE ENFOQUE CLÍNICO -->
+    <section id="enfoque" class="max-w-5xl mx-auto px-6 py-20">
+        <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+            <h2 class="text-3xl font-700 text-sereno-800">Mi Práctica Clínica</h2>
+            <p class="text-slate-500">Terapias de tercera generación adaptadas a tus necesidades individuales.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Tarjeta 1 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm space-y-4 hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 rounded-xl bg-arena-500/10 flex items-center justify-center text-arena-600">
+                    <i data-lucide="brain" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-600 text-slate-800">Terapias Contextuales</h3>
+                <p class="text-sm text-slate-500 leading-relaxed">
+                    Uso de modelos científicos como la Terapia de Aceptación y Compromiso (ACT), centrados en el contexto y la flexibilidad psicológica.
+                </p>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm space-y-4 hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 rounded-xl bg-arena-500/10 flex items-center justify-center text-arena-600">
+                    <i data-lucide="heart" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-600 text-slate-800">Proceso Compasivo</h3>
+                <p class="text-sm text-slate-500 leading-relaxed">
+                    Un espacio libre de juicios donde abordamos problemáticas de ansiedad, estado de ánimo, crisis vitales y gestión emocional.
+                </p>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm space-y-4 hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 rounded-xl bg-arena-500/10 flex items-center justify-center text-arena-600">
+                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-600 text-slate-800">Eficacia Evidenciada</h3>
+                <p class="text-sm text-slate-500 leading-relaxed">
+                    Estrategias e intervenciones respaldadas por la investigación científica actual en el campo de la psicología de la salud.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE FORMACIÓN ACADÉMICA -->
+    <section id="formacion" class="bg-white border-t border-slate-100 py-20">
+        <div class="max-w-3xl mx-auto px-6">
+            <h3 class="text-2xl font-600 text-slate-800 mb-8 border-b border-slate-100 pb-2 flex items-center gap-2">
+                <i data-lucide="graduation-cap" class="w-6 h-6 text-arena-500"></i>
+                Formación Académica
+            </h3>
+            
+            <div class="space-y-8">
+                <!-- Especialización en Almería -->
+                <div class="relative pl-6 border-l-2 border-arena-300 hover:border-arena-500 transition-colors duration-300">
+                    <div class="absolute w-3 h-3 bg-arena-500 rounded-full -left-[7px] top-1.5 shadow-sm"></div>
+                    <span class="text-xs font-600 uppercase tracking-wider text-arena-600 bg-arena-50 px-2 py-0.5 rounded">Postgrado</span>
+                    <h4 class="text-xl font-600 text-slate-800 mt-1">Especialización en Psicoterapias Contextuales</h4>
+                    <p class="text-md text-slate-600 font-500">Universidad de Almería</p>
+                    <p class="text-sm text-slate-400 mt-1">Enfoque avanzado en Terapias de Tercera Generación (ACT, FAP, Mindfulness).</p>
+                </div>
+
+                <!-- Pregrado / Psicología -->
+                <div class="relative pl-6 border-l-2 border-slate-200 hover:border-arena-500 transition-colors duration-300">
+                    <div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-1.5"></div>
+                    <span class="text-xs font-600 uppercase tracking-wider text-slate-500 bg-slate-50 px-2 py-0.5 rounded">Pregrado</span>
+                    <h4 class="text-xl font-600 text-slate-700 mt-1">Profesional en Psicología</h4>
+                    <p class="text-md text-slate-500 font-500">Universidad de origen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA / FOOTER -->
+    <footer class="bg-sereno-800 text-slate-400 py-12 border-t border-sereno-700">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm">
+            <p>&copy; 2026 Paula Atehortua. Todos los derechos reservados.</p>
+            <div class="flex gap-6">
+                <a href="https://wa.me/tu-numero-aqui" target="_blank" class="hover:text-white transition-colors flex items-center gap-1">
+                    <i data-lucide="phone" class="w-4 h-4"></i> WhatsApp
+                </a>
+                <span class="text-slate-600">|</span>
+                <p class="flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i> Consulta Online / Presencial</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para inicializar los iconos automáticamente -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
